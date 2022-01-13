@@ -83,15 +83,19 @@ zaun_3()
 
 echo -en "$(piltover_1 'Escolhe um número para seleccionar distribuição'): \n"
 
-echo -en "$(piltover_3 1): arch \n"
-echo -en "$(piltover_3 2): ubuntu \n"
+echo -en "$(piltover_3 a): arch \n"
+echo -en "$(piltover_3 r): redhat \n"
+echo -en "$(piltover_3 u): ubuntu \n"
 read distro
 
 case $distro in
-  1) 
+  a) 
     distroname=arch
     ;;
-  2) 
+  r) 
+    distroname=redhat
+    ;;
+  u) 
     distroname=ubuntu
     ;;
   *) 
@@ -122,6 +126,21 @@ case $tag in
     ;;
   2) 
     tagname=mid-wsl-1
+    ;;
+  3) 
+    tagname=full-wsl-1
+    ;;
+  4) 
+    tagname=full-miktex-wsl-1
+    ;;
+  5) 
+    tagname=minimal
+    ;;
+  6) 
+    tagname=latest
+    ;;
+  7) 
+    tagname=latest-miktex
     ;;
   *) 
     echo -en "Número inválido.\n"
