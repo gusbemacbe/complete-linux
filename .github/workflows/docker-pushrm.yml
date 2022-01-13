@@ -1,0 +1,19 @@
+name: Push README to Docker Hub
+on: push
+jobs:
+  PushContainerReadme:
+    runs-on: ubuntu-latest
+    name: Push README to Docker Hub
+    steps:
+      - name: git checkout
+        uses: actions/checkout@v2
+      - name: push README to Dockerhub
+        uses: christian-korneck/update-container-description-action@v1
+        env:
+          DOCKER_USER: gusbemacbe
+          DOCKER_PASS: ${{ secrets.DOCKER_PASS }}
+        with:
+          destination_container_repo: gusbemacbe/complete-arch
+          provider: dockerhub
+          short_description: 'Choose one of minimal or complete containers to export from Docker and import to WSL!'
+          readme_file: 'README.md'
