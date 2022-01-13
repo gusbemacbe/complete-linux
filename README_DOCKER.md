@@ -38,386 +38,385 @@ As etiquetas `full` e `latest` são as mesmas coisas.
     </tr>
     <tr class="even">
       <td><code>base-devel</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>chafa</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>chameleon-git</code> <a href="#fn1" class="footnote-ref" id="fnref1"
           role="doc-noteref"><sup>1</sup></a></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>curl</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>fish</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>fzf</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>gcc</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>git</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>gitstatus</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>glibc-wsl</code> <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>
       </td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
     </tr>
     <tr class="even">
       <td><code>glibc</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>htop</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>imagemagick</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>kitty-terminfo</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>kitty</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>libsixel</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>libvterm</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>lsd</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>lsix-git</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>micro</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>neofetch</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>oh-my-posh</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>oh-my-zsh</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>openssh</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>pandoc-crossref</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>pandoc</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>powerlevel10k</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>sixel-tmux-git</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>sudo</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>unzip</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>vte3-git</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>w3m</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>wget</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>xclip</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>xdotool</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>xorg-xauth</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>xorg-xdpyinfo</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>xorg-xprop</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>xorg-xrandr</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>xorg-xwininfo</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>xterm</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/3Fn9BZm" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>zsh-autosuggestions</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>zsh-completions</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>zsh-history-substring</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="even">
       <td><code>zsh-syntax-highlighting</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
     <tr class="odd">
       <td><code>zsh</code></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
-      <td style="text-align: center;"><img src="https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
+      <td style="text-align: center;"><img src="https://bit.ly/34Mnunr" /></td>
     </tr>
   </tbody>
 </table>
 
-<section class="footnotes" role="doc-endnotes">
-  <hr />
-  <ol>
-    <li id="fn1" role="doc-endnote">
-      <p>Um selector de cor totalmente personalizável num terminal. <a href="#fnref1" class="footnote-back"
-          role="doc-backlink">↩︎</a></p>
-    </li>
-    <li id="fn2" role="doc-endnote">
-      <p>https://github.com/makotom/glibc-wsl <a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p>
-    </li>
-  </ol>
-</section>
+<hr />
+
+<ol>
+  <li id="fn1" role="doc-endnote">
+    <p>Um selector de cor totalmente personalizável num terminal. <a href="#fnref1" class="footnote-back"
+        role="doc-backlink">↩︎</a></p>
+  </li>
+  <li id="fn2" role="doc-endnote">
+    <p>https://github.com/makotom/glibc-wsl <a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p>
+  </li>
+</ol>
