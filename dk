@@ -1,0 +1,131 @@
+#!/bin/zsh
+
+# Códigos de ANSI
+# Resetar
+NC='\033[0m'
+
+# Cores regulares
+AMARELO='\033[0;33m'
+AZUL='\033[0;34m'
+BRANCO='\033[0;37m'
+CIANO='\033[0;36m'
+PRETO='\033[0;30m'
+PURPURA='\033[0;35m'
+VERDE='\033[0;32m'
+VERMELHO='\033[0;31m'
+
+# Em negrito
+N_AMARELO='\033[1;33m'
+N_AZUL='\033[1;34m'
+N_BRANCO='\033[1;37m'
+N_CIANO='\033[1;36m'
+N_PRETO='\033[1;30m'
+N_PURPURA='\033[1;35m'
+N_VERDE='\033[1;32m'
+N_VERMELHO='\033[1;31m'
+
+# Estilo
+ITALICO='\033[3m'
+NEGRITO='\033[1m'
+N_ITALICO='\033[1;3m'
+
+function f_amarelo    { printf "${AMARELO}$@${NC}\n" }
+function f_azul       { printf "${AZUL}$@${NC}\n" }
+function f_branco     { printf "${BRANCO}$@${NC}\n" }
+function f_ciano      { printf "${AMARELO}$@${NC}\n" }
+function f_preto      { printf "${AZUL}$@${NC}\n" }
+function f_purpura    { printf "${BRANCO}$@${NC}\n" }
+function f_verde      { printf "${AZUL}$@${NC}\n" }
+function f_vermelho   { printf "${BRANCO}$@${NC}\n" }
+
+function f_n_amarelo  { printf "${N_AMARELO}$@${NC}\n" }
+function f_n_azul     { printf "${N_AZUL}$@${NC}\n" }
+function f_n_branco   { printf "${N_BRANCO}$@${NC}\n" }
+function f_n_ciano    { printf "${N_AMARELO}$@${NC}\n" }
+function f_n_preto    { printf "${N_AZUL}$@${NC}\n" }
+function f_n_purpura  { printf "${N_BRANCO}$@${NC}\n" }
+function f_n_verde    { printf "${N_AZUL}$@${NC}\n" }
+function f_n_vermelho { printf "${N_BRANCO}$@${NC}\n" }
+
+function f_italico    { printf "${ITALICO}$@${NC}\n" }
+function f_negrito    { printf "${NEGRITO}$@${NC}\n" }
+function f_n_italico  { printf "${N_ITALICO}$@${NC}\n" }
+
+echo -en "Escolhe um número para construir com o $(f_italico  dockerfile) ou publicar a imagem:\n"
+echo -en "$(f_n_amarelo 1:) Docker Build: Arch Minimal\n"
+echo -en "$(f_n_amarelo 2:) Docker Push: Arch Minimal\n"
+
+echo -en "$(f_n_amarelo 3:) Docker Build: Arch Minimal WSL 1\n" 
+echo -en "$(f_n_amarelo 4:) Docker Push: Arch Minimal WSL 1\n"
+
+echo -en "$(f_n_amarelo 5:) Docker Build: Arch Latest\n" 
+echo -en "$(f_n_amarelo 6:) Docker Push: Arch Latest\n"
+
+echo -en "$(f_n_amarelo 7:) Docker Build: Arch Full WSL 1\n" 
+echo -en "$(f_n_amarelo 8:) Docker Push: Arch Full WSL 1\n"
+
+read escolha
+
+case $escolha in
+  1)
+    echo -en "A construir o novo $(f_italico container) da imagem de Arch na tag $(f_negrito minimal)"
+    echo " "
+    echo " "
+    docker build -f complete-arch/minimal.dockerfile --progress=plain -t gusbemacbe/complete-arch:minimal . | sed '/^Step/d; /^Running/d'
+    ;;
+
+  2)
+    echo -en "A puxar o novo $(f_italico container) da imagem de Arch na tag $(f_negrito minimal) para o $(f_negrito hub) do Docker"
+    echo " "
+    echo " "
+    docker push gusbemacbe/complete-arch:minimal
+    ;;
+
+  3)
+    echo -en "A construir o novo $(f_italico container) da imagem de Arch na tag $(f_negrito minimal-wsl-1)"
+    echo " "
+    echo " "
+    docker build -f complete-arch/minimal-wsl-1.dockerfile -t gusbemacbe/complete-arch:minimal-wsl-1 . | sed '/^Step/d; /^Running/d'
+    ;;
+
+  4)
+    echo -en "A puxar o novo $(f_italico container) da imagem de Arch na tag $(f_negrito minimal-wsl-1) para o $(f_negrito hub) do Docker"
+    echo " "
+    echo " "
+    docker push gusbemacbe/complete-arch:minimal-wsl-1
+    ;;
+
+  5)
+    echo -en "A construir o novo $(f_italico container) da imagem de Arch na tag $(f_negrito latest)"
+    echo " "
+    echo " "
+    docker build -f complete-arch/latest.dockerfile -t gusbemacbe/complete-arch:latest . | sed '/^Step/d; /^Running/d'
+    ;;
+
+  6)
+    echo -en "A puxar o novo $(f_italico container) da imagem de Arch na tag $(f_negrito latest) para o $(f_negrito hub) do Docker"
+    echo " "
+    echo " "
+    docker push gusbemacbe/complete-arch:latest
+    ;;
+
+  7)
+    echo -en "A construir o novo $(f_italico container) da imagem de Arch na tag $(f_negrito full-wsl-1)"
+    echo " "
+    echo " "
+    docker build -f complete-arch/full-wsl-1.dockerfile -t gusbemacbe/complete-arch:full-wsl-1 . | sed '/^Step/d; /^Running/d'
+    ;;
+
+  8)
+    echo -en "A puxar o novo $(f_italico container) da imagem de Arch na tag $(f_negrito full-wsl-1) para o $(f_negrito hub) do Docker"
+    echo " "
+    echo " "
+    docker push gusbemacbe/complete-arch:full-wsl-1
+    ;;
+
+  *)
+    echo -en $(f_n_italico "Número inválido")
+    echo " "
+    echo " "
+    ;;
+esac

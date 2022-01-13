@@ -1,0 +1,5 @@
+XKBMODEL="apple_laptop"
+XKBLAYOUT="us"
+XKBVARIANT="mac"
+XKBOPTIONS="compose:menu"
+BACKSPACE="guess"

@@ -1,0 +1,5 @@
+XKBMODEL="pc105"
+XKBLAYOUT="us"
+XKBVARIANT="intl"
+XKBOPTIONS="compose:menu"
+BACKSPACE="guess"

@@ -1,0 +1,68 @@
+{
+    "name": "global",
+    "version": "2.3.0",
+    "description": "Global settings for all projects",
+    "repository": {
+        "type": "git",
+        "url": "git+https://gitlab.com/gusbemacbe/global.git"
+    },
+    "keywords": [
+        "composer",
+        "git",
+        "gulp",
+        "global",
+        "linux",
+        "npm",
+        "settings",
+        "ssh",
+        "tests",
+        "webpack"
+    ],
+    "author": "Gustavo Costa",
+    "license": "MIT",
+    "private": true,
+    "bugs": {
+        "url": "https://gitlab.com/gusbemacbe/global/issues"
+    },
+    "homepage": "https://gitlab.com/gusbemacbe/global#readme",
+    "dependencies": {
+        "@angular/cli": "^12.2.2",
+        "csscomb": "^4.3.0",
+        "expo-cli": "^4.10.1",
+        "express": "^4.17.1",
+        "fexfetch": "^1.1.0",
+        "gatsby": "^3.11.1",
+        "glob-all": "^3.2.1",
+        "gtop": "^1.1.1",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-cli": "^2.3.0",
+        "gulp-favicons": "^3.0.0",
+        "gulp-livereload": "^4.0.2",
+        "gulp-postcss": "^9.0.0",
+        "gulp-purgecss": "^4.0.3",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^5.0.0",
+        "gulp-uglify": "^3.0.2",
+        "http-server": "^13.0.0",
+        "lodash": "^4.17.21",
+        "npx": "^10.2.2",
+        "prettier": "^2.3.2",
+        "purgecss-webpack-plugin": "^4.0.3",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "request": "^2.88.2",
+        "sass": "^1.43.2",
+        "typescript": "^4.3.5",
+        "vue": "^2.6.14"
+    },
+    "os": [
+        "!darwin",
+        "linux",
+        "!win32",
+        "!win64"
+    ],
+    "cpu": [
+        "x64",
+        "!ia32"
+    ]
+}
