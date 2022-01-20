@@ -1,132 +1,189 @@
 # Ubuntu 21.10 Impish
-FROM ubuntu:rolling as base
 
-LABEL description="Ubuntu 21.10 image comes with Fish, git, htop, Micro, Neofetch, Oh My Posh, Oh My Zsh, Powerlevel10k, SSH and ZSH, minimal Python and complete NPM" maintainer="Gustavo Costa <gusbemacbe@gmail.com>" vendor="Gustavo Costa" version="1.5.0"
+FROM ubuntu:rolling AS base
+
+LABEL description "Minimal version of Ubuntu 21.10 image comes with Git, Micro, Neofetch, Oh My Zsh, Powerlevel10k, SSH and ZSH"
+LABEL maintainer="Gustavo Costa <gusbemacbe@gmail.com>" 
+LABEL vendor="Gustavo Costa" 
+LABEL version="1.5.1"
 
 # 🇬🇧 SYSTEM
 # 🇵🇹 SISTEMA
 # =============================
 
-## 🇬🇧 SETTINGS AND SMALL SYSTEM LIBRARIES
-## 🇵🇹 CONFIGURAÇÕES E PEQUENAS BIBLIOTECAS DO SISTEMA
-## =============================
-
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-ENV TERM xterm
+ENV TERM xterm-256color
+RUN set -ex
 
-### 🇬🇧 Setting the time zone and symlinking it with force, so it will not be stuck during the tzdata setting
-### 🇵🇹 Definindo o fuso horário e ligando-o simbolicamente com força, então não ficará preso durante a configuração de tzdata
-ENV TZ=America/Sao_Paulo
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+RUN ldconfig
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN set -ex
-RUN apt update && apt upgrade -y
+COPY ./config/sh/colours.sh ./
+RUN chmod au+x ./colours.sh
 
-### 🇬🇧 Necessary missed dependencies for the system
-### 🇵🇹 Dependências faltadas necessárias para o sistema
-RUN apt install -y build-essential gcc sudo
+# 🇬🇧 Setting pacman configuration
+# 🇵🇹 A definir a configuração do pacman
+RUN source ./colours.sh && echo -en "$(piltover_2 1:) A copiar o ficheiro de configuração de $(italico pacman).\n"
+COPY ./config/arch/pacman.conf /etc/
 
-### 🇬🇧 Setting the system keyboard and language
-### 🇵🇹 A definir o idioma e o teclado do sistema
-RUN apt install -y locales locales-all
+# 🇬🇧 Firstly it needs to be synced and then “glibc” (“locales”) needs to be installed before generating the languages
+# 🇵🇹 Primeiramente, precisa ser sincronizado e depois a biblioteca «glibc» (“locales”) precisa ser instalada antes de gerar os idiomas
+RUN source ./colours.sh && echo -en "$(piltover_2 2:) A instalar as localizações.\n"
+RUN apt update && apt upgrade -y && apt install -y locales locales-all
 
-COPY ./config/locale.gen /etc/locale.gen
+# 🇬🇧 Setting the time zone and symlinking it with force, so it will not be stuck during the tzdata setting
+# 🇵🇹 Definindo o fuso horário e ligando-o simbolicamente com força, então não ficará preso durante a configuração de tzdata
+RUN source ./colours.sh && echo -en "$(piltover_2 3:) A configurar o fuso horário e o horário.\n"
+ENV TZ=America/Sao_Paulo
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-RUN localedef -i pt_PT -c -f UTF-8 -A /usr/share/locale/locale.alias pt_PT.UTF-8
+# 🇬🇧 Setting the system keyboard and language
+# 🇵🇹 A definir o idioma e o teclado do sistema
+RUN source ./colours.sh && echo -en "$(piltover_2 4:) A instalar os meus idiomas favoritos e o teclado do sistema.\n"
+COPY ./config/languages/locale-minimal.gen /etc/locale.gen.orig
+RUN sed -e 's/[[:space:]]*#.*//' -e '/^$/d' /etc/locale.gen.orig >/etc/locale.gen
+RUN cat /etc/locale.gen
 RUN locale-gen
 
+RUN source ./colours.sh && echo -en "$(piltover_2 5:) A aplicar o idioma 🇵🇹 para o sistema.\n"
 ENV LANG pt_PT.utf8
 ENV LANGUAGE pt_PT:pt_BR:en  
 ENV LC_ALL pt_PT.UTF-8
 
-### 🇬🇧 Keyboard
-### 🇵🇹 Teclado
-COPY ./config/keyboard /etc/default/keyboard
+# 🇬🇧 Keyboard
+# 🇵🇹 Teclado
+COPY ./config/keyboards/kbd-apple-en-us-mac /etc/default/keyboard
 RUN apt install -y kbd
 
-### 🇬🇧 SSH to generate the SSH keys for the enterprise's GitLab account
-### 🇵🇹 SSH para gerar as chaves de SSH para a conta do GitLab da empresa
+# 🇬🇧 Necessary missed dependencies for the system
+# 🇵🇹 Dependências faltadas necessárias para o sistema
+RUN source ./colours.sh && echo -en "$(piltover_2 6:) A instalar as dependências perdidas para o sistema.\n"
+RUN source ./colours.sh && echo -en "São $(shurima build-essential), $(shurima gcc) e $(shurima sudo).\n"
+RUN apt install -y build-essential
+RUN apt install -y gcc sudo
+
+# 🇬🇧 SSH to generate the SSH keys for the enterprise's GitLab account
+# 🇵🇹 SSH para gerar as chaves de SSH para a conta do GitLab da empresa
+RUN source ./colours.sh && echo -en "$(piltover_2 7:) A instalar $(shurima openssh) para poder gerar a chave de SSH para a conta do GitLab.\n"
 RUN apt install -y openssh-client openssh-server
 
-### 🇬🇧 To check for the authenticity of SSL connections, clone the repositories and download the compressed packges from internet
-### 🇵🇹 Para verificar a autenticidade das conexões SSL, clonar os repositórios e transferir os pacotes compactados da Internet
-RUN apt install -y ca-certificates git wget unzip
+# 🇬🇧 To check for the authenticity of SSL connections, clone the repositories and download the compressed packges from internet
+# 🇵🇹 Para verificar a autenticidade das conexões SSL, clonar os repositórios e transferir os pacotes compactados da Internet
+RUN source ./colours.sh && echo -en "$(piltover_2 8:) A instalar $(shurima curl) e $(shurima wget) para poder transferir os pacotes como o de $(zaun 'Oh my Posh') e $(shurima unzip) para extrair os pacotes, como o de $(zaun 'Oh my Posh').\n"
+RUN apt install -y ca-certificates curl git wget unzip
 
-# 🇬🇧 Ah, curl, pandoc and xclip are missed!
-# 🇵🇹 Ah, faltam os pacotes curl, pandoc e xclip!
-RUN apt install -y curl pandoc xclip
+# 🇬🇧 Ah, pandoc and xclip are missed!
+# 🇵🇹 Ah, faltam os pacotes pandoc e xclip!
+RUN source ./colours.sh && echo -en "$(piltover_2 9:) Realmente preciso de $(shurima pandoc) para exportar os ficheiros contendo os variáveis de Pandoc para Markdown e $(shurima xclip) para poder copiar e colar do Micro Editor.\n"
+RUN apt install -y pandoc xclip
 
-## 🇬🇧 TOOLS
-## 🇵🇹 FERRAMENTAS
-## =============================
-
-### 🇬🇧 My favourite tools
-### 🇵🇹 Minhas ferramentas favoritas
-RUN apt install -y fish htop micro neofetch zsh
+# 🇬🇧 My favourite tools
+# 🇵🇹 Minhas ferramentas favoritas
+RUN source ./colours.sh && echo -en "$(piltover_2 10:) As ferramentas que adoramos mais e utilizamos mais para mostrar a alguém.\n"
+RUN apt install -y htop micro neofetch zsh
 
 ### 🇬🇧 Nodejs and NPM
 ### 🇵🇹 Nodejs e NPM
+RUN source ./colours.sh && echo -en "$(piltover_2 11:) A instalar Nodejs e $(shurima npm) para instalar as bibliotecas de Angular e de Voxel.\n"
 RUN apt install -y nodejs npm
-
-# 🇬🇧 Installing Yarn via NPM
-# 🇵🇹 A instalar o Yarn via NPM
-RUN npm install -g yarn
 
 # 🇬🇧 Python and PyPi
 # 🇵🇹 Python e PyPi
+RUN source ./colours.sh && echo -en "$(piltover_2 12:) A instalar Python e $(shurima pip) para utilizar Jupyter e as bibliotecas de ciências de dados.\n"
 RUN apt install -y python3 python3-pip
+
+# 🇬🇧 Other tools that are not part part of Arch's official repositories
+# 🇵🇹 Outras ferramentas que não fazem parte dos repositórios oficiais do Arch
+RUN source ./colours.sh && echo -en "$(piltover_2 'A copiar e instalar o') $(shurima chameleon) $(piltover_2 e o) $(shurima gitstatus).\n"
+RUN pip3 install moving-chameleon
+COPY ./config/ubuntu/source/gitstatus /usr/share/
+
+# 🇬🇧 Some tools for zsh need to be Neofetch!
+# 🇵🇹 Faltam algumas ferramentas para Neofetch!
+RUN source ./colours.sh && echo -en "$(piltover_2 13:) Quem precisa ou quer mostrar as imagens via $(shurima neofetch) ou mostrar as funções $(italico fancy) no Windows Terminal ou no Kitty?\n"
+RUN apt install -y chafa imagemagick libvterm0 w3m w3m-img xdotool x11-utils x11-xserver-utils xterm
+
+# 🇬🇧 Since WSL and Windows Terminal do not support displaying the image with Neofetch, we can try to use Kitty
+# 🇵🇹 Como o WSL e o Windows Terminal não suportam exibindo a imagem com Neofetch, podemos tentar usar Kitty
+RUN apt install -y kitty kitty-terminfo xauth
+
+RUN source ./colours.sh && echo -en "$(piltover_2 'A instalar as ferramentas de Sixel').\n"
+RUN apt install -y libsixel-bin
+COPY ./config/ubuntu/source/lsix/lsix /usr/bin/
 
 # 🇬🇧 Installing LSDeluxe
 # 🇵🇹 A instalar o LSDeluxe
-ENV LSDELUXE_VERSION 0.20.1
+ENV LSDELUXE_VERSION 0.21.0
 RUN wget -nv -O lsdeluxe.deb https://github.com/Peltoche/lsd/releases/download/${LSDELUXE_VERSION}/lsd_${LSDELUXE_VERSION}_amd64.deb
 RUN dpkg -i lsdeluxe.deb
 RUN rm lsdeluxe.deb
 
 # 🇬🇧 Installing Oh My Posh
 # 🇵🇹 A instalar o Oh My Posh
+RUN source ./colours.sh && echo -en "$(piltover_2 14:) A instalar o Oh My Posh, alternativo ao Oh my Zsh e ao Powerlevel10k.\n"
 RUN wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
 RUN chmod +x /usr/local/bin/oh-my-posh
 
 # 🇬🇧 To clean the cache and temporary files
 # 🇵🇹 Para limpar o cache e arquivos temporários
+RUN source ./colours.sh && echo -en "$(piltover_2 15:) A limpar os $(italico caches) e os $(italico cookies) de modo a optimizar o tamanho do $(italico container) da imagem do Docker.\n"
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+# 🇬🇧 Changing the default shell
+# 🇵🇹 A modificar o shell padrão
+RUN source ./colours.sh && echo -en "$(piltover_2 16:) A mudar o shell padrão para ZSH e adeus, Bash 💔.\n"
+RUN chsh -s /usr/bin/zsh
+
+# 🇬🇧 Entering the new shell
+# 🇵🇹 A entrar no novo shell
+RUN zsh
 
 # 🇬🇧 USER
 # 🇵🇹 UTILIZADOR
 # =============================
+RUN source ./colours.sh && echo -en "$(piltover_2 17:) A criar o utilizador.\n"
+RUN echo "user ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/user
+COPY ./config/sudoers /etc/sudoers
+RUN chmod 0440 /etc/sudoers.d/user
+RUN chmod 0440 /etc/sudoers
 
-RUN echo "user ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/user && chmod 0440 /etc/sudoers.d/user
+ENV UUSER=benegus
+ENV GROUP=www-data
+ARG USER_FOLDER=/home/$UUSER
 
-ENV APP_USER=benegus
-ENV APP_USER_GROUP=www-data
-ARG APP_USER_HOME=/home/$APP_USER
+RUN useradd -m $UUSER
+RUN usermod -aG root $UUSER
+RUN usermod -aG users $UUSER
+RUN addgroup wheel
+RUN usermod -aG wheel $UUSER
+RUN usermod -aG $GROUP $UUSER
+RUN usermod -g root $UUSER
+RUN usermod -u 1001 $UUSER
+RUN usermod $UUSER -p "$(openssl passwd -1 piltover-and-zaun)"
+RUN groups $UUSER
 
-RUN useradd -rm -d $APP_USER_HOME -s /bin/bash -g root -G sudo -u 1001 $APP_USER -p "$(openssl passwd -1 ubuntu)"
+RUN rm ./colours.sh
 
-USER $APP_USER
-WORKDIR $APP_USER_HOME
+USER $UUSER
+WORKDIR $USER_FOLDER
 
-RUN mkdir $APP_USER_HOME/{Documentos,Git,GitHub,GitLab,Imagens,Transferências,Vídeos,Workspaces}
-RUN mkdir $APP_USER_HOME/.{config,local,ssh}
-
-# 🇬🇧 Copying the ASCCI art text files to Neofetch configuration folder
-# 🇵🇹 A copiar os ficheiros de texto de arte ASCII para a pastas de configuracões de Neofetch
-RUN mkdir -p $APP_USER_HOME/.config/neofetch/ascii
-COPY --chown=$APP_USER:$APP_USER_GROUP ./config/itau*.txt $APP_USER_HOME/.config/neofetch/ascii/
+COPY ./config/sh/colours.sh ./
+RUN source ./colours.sh && echo -en "$(piltover_2 18:) A criar as pastas necessárias.\n"
+RUN mkdir -pv $USER_FOLDER/.{aspnet,config/neofetch/{ascii,images,styles},dotnet,jupyter,kite,local/{bin,share/{apps,icons}},fzf,p10k/themes,poetry,poshthemes,ssh}
+RUN mkdir -pv $USER_FOLDER/{Documentos,Git,GitHub,GitLab,Imagens,Transferências,Videos,Workspaces}
 
 # 🇬🇧 Installing FZF - executable only (required for “zsh-interactive-cd”)
-# 🇵🇹 A instalar o FZF - somente executável (obrigatório para «zsh-Interactive-cd»)
+# 🇵🇹 A instalar o FZF - somente executável (obrigatório para «zsh-interactive-cd»)
+RUN source ./colours.sh && echo -en "$(piltover_2 19:) A transferir e instalar o FZF.\n"
 RUN git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 RUN ~/.fzf/install
 
 # 🇬🇧 Downlading Oh My Posh themes
 # 🇵🇹 A transferir os temas de Oh My Posh
-RUN mkdir ~/.poshthemes
+RUN source ./colours.sh && echo -en "$(piltover_2 20:) A transferir os temas para o Oh my Posh.\n"
 RUN wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/themes.zip -O ~/.poshthemes/themes.zip
 RUN unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
 RUN chmod u+rw ~/.poshthemes/*.json
@@ -134,32 +191,70 @@ RUN rm ~/.poshthemes/themes.zip
 
 # 🇬🇧 Installing Oh my ZSH
 # 🇵🇹 A instalar o Oh My ZSH
+RUN source ./colours.sh && echo -en "$(piltover_2 21:) A transferir e instalar o Oh my ZSH.\n"
 RUN wget -qO- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | zsh || true
 
-ARG ZSH_CUSTOM=$APP_USER_HOME/.oh-my-zsh/custom
+ARG ZSH_CUSTOM=$USER_FOLDER/.oh-my-zsh/custom
+RUN echo $ZSH_CUSTOM
 
 # 🇬🇧 Installing Oh My ZSH plugins and themes, and Powerlevel10k
 # 🇵🇹 A instalar os plugins e os temas de Oh My ZSH, e Powerlevel10k
-RUN \
-  ZSH_PLUGINS=$ZSH_CUSTOM/plugins \
-  && ZSH_THEMES=$ZSH_CUSTOM/themes \
-  && git clone --single-branch --branch '0.7.1' --depth 1 https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_PLUGINS/zsh-syntax-highlighting \
-  && git clone --single-branch --branch 'v0.7.0' --depth 1 https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_PLUGINS/zsh-autosuggestions \
-  && git clone --single-branch --depth 1 https://github.com/romkatv/powerlevel10k.git $ZSH_THEMES/powerlevel10k
+ENV ZSH_PLUGINS $ZSH_CUSTOM/plugins
+ENV ZSH_THEMES $ZSH_CUSTOM/themes
+
+RUN source ./colours.sh && echo -en "$(piltover_2 22:) A transferir e instalar o os complementos de ZSH e Oh My ZSH, e a instalar o Powerlevel10k.\n"
+RUN git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_PLUGINS/zsh-autosuggestions
+RUN git clone https://github.com/zsh-users/zsh-completions.git $ZSH_PLUGINS/zsh-completions
+RUN git clone https://github.com/zsh-users/zsh-history-substring-search  $ZSH_PLUGINS/zsh-history-substring-search
+RUN git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_PLUGINS/zsh-syntax-highlighting
+RUN git clone https://github.com/romkatv/powerlevel10k.git $ZSH_THEMES/powerlevel10k
 
 # 🇬🇧 Installing Oh My ZSH configuration files
 # 🇵🇹 A instalar os meus ficheiros de configuração de Oh my ZSH
-COPY --chown=$APP_USER:$APP_USER_GROUP ./config/.p10k.zsh $APP_USER_HOME/
-COPY --chown=$APP_USER:$APP_USER_GROUP ./config/.zshrc $APP_USER_HOME/
-COPY --chown=$APP_USER:$APP_USER_GROUP ./config/aliases.zsh $ZSH_CUSTOM
+RUN source ./colours.sh && echo -en "$(piltover_2 23:) A copiar o tema de Powerlevel10k e os ficheiros de configuração de ZSH.\n"
+COPY --chown=$UUSER:$GROUP ./config/zsh/themes/*.zsh $USER_FOLDER/.p10k/themes/
+COPY --chown=$UUSER:$GROUP ./config/zsh/.zshrc $USER_FOLDER/
+COPY --chown=$UUSER:$GROUP ./config/zsh/alias/aliases.zsh $ZSH_CUSTOM
 
-# 🇬🇧 NPM AND YARN
-# 🇵🇹 NPM E YARN
+# 🇬🇧 Copying the ANSI and ASII art files to Neofetch folders
+# 🇵🇹 A copiar os ficheiros de arte de ANSI e ASCII à pasta de Neofetch
+RUN source ./colours.sh && echo -en "$(piltover_2 24:) A copiar as artes de ANSI e ASCII para Neofetch.\n"
+COPY ./config/ansi/with-neofetch/itau*.txt $USER_FOLDER/.config/neofetch/ascii/
+COPY ./config/images/* $USER_FOLDER/.config/neofetch/images/
+
+# 🇬🇧 NPM, PNPM AND YARN
+# 🇵🇹 NPM, PNPM E YARN
 # =============================
+RUN source ./colours.sh && echo -en "$(piltover_2 25:) A configurar o caminho do $(shurima npm).\n"
+RUN npm config set prefix ~/.node_modules
+RUN npm config set cache ~/.node_modules/cache
+RUN export PATH="~/.node_modules/bin:$PATH"
+
+RUN source ./colours.sh && echo -en "$(piltover_2 26:) A instalar o $(shurima yarn).\n"
+RUN npm i -g yarn
+RUN curl -fsSL https://get.pnpm.io/install.sh | sh -
 
 # 🇬🇧 Installing the favourite packages via yarn
 # 🇵🇹 A instalar os pacotes favoritos via yarn
-RUN mkdir -p $APP_USER_HOME/.config/yarn/global
-COPY --chown=$APP_USER:$APP_USER_GROUP ./config/package.json $APP_USER_HOME/.config/yarn/global/
+RUN source ./colours.sh && echo -en "$(piltover_2 27:) A copiar o ficheiro de configuração de Yarn.\n"
+COPY --chown=$UUSER:$GROUP ./config/node/package.json $USER_FOLDER/.config/yarn/global/
+
+# PYTHON
+# =============================
+RUN source ./colours.sh && echo -en "$(piltover_2 28:) A instalar o Poetry.\n"
+RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 -
+
+# OUTROS
+# =============================
+
+# 🇬🇧 To clean the caches to optimise the Docker container size
+# 🇵🇹 Para limpar os caches para optimizar o tamanho do container do Docker
+RUN source ./colours.sh && echo -en "$(piltover_2 29:) A limpar os $(italico caches) para optimizar o tamanho do $(italico container) do Docker.\n"
+RUN sudo rm -rf /tmp/*
+RUN printf "S" | sudo apt clean
+RUN printf "S" | sudo apt autoclean
+
+RUN sudo npm cache clean --force
+RUN npm cache verify
 
 CMD ["zsh"]
