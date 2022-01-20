@@ -13,7 +13,7 @@ jobs:
           DOCKER_USER: gusbemacbe
           DOCKER_PASS: ${{ secrets.DOCKER_PASS }}
         with:
-          destination_container_repo: gusbemacbe/complete-arch
+          destination_container_repo: gusbemacbe/complete-ubuntu
           provider: dockerhub
           short_description: 'Choose one of minimal or complete containers to export from Docker and import to WSL!'
-          readme_file: ./README_PURE_MARKDOWN.md
+          readme_file: ./README_UBUNTU.md
