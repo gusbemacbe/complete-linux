@@ -18,6 +18,8 @@ RUN set -ex
 
 RUN ldconfig
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 # 🇬🇧 Setting pacman configuration
 # 🇵🇹 A definir a configuração do pacman
 COPY ./config/arch/pacman.conf /etc/

@@ -18,6 +18,8 @@ RUN set -ex
 
 RUN ldconfig
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 COPY ./config/sh/colours.sh ./
 RUN chmod au+x ./colours.sh
 
