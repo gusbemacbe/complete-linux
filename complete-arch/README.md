@@ -59,5 +59,5 @@
   <li id="fn2"> https://github.com/makotom/glibc-wsl <a href="#fnref2">↩︎</a></li>
 </ol>
 
-[n]: https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/no.png
-[s]: https://raw.githubusercontent.com/gusbemacbe/complete-linux/main/config/images/yes.png
+[n]: ../config/images/no.png
+[s]: ../config/images/yes.png
