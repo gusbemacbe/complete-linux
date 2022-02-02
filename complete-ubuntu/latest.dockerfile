@@ -72,7 +72,7 @@ RUN apt install -y openssh-client openssh-server
 # 🇬🇧 To check for the authenticity of SSL connections, clone the repositories and download the compressed packges from internet
 # 🇵🇹 Para verificar a autenticidade das conexões SSL, clonar os repositórios e transferir os pacotes compactados da Internet
 RUN source ./colours.sh && echo -en "$(piltover_2 8:) A instalar $(shurima curl) e $(shurima wget) para poder transferir os pacotes como o de $(zaun 'Oh my Posh') e $(shurima unzip) para extrair os pacotes, como o de $(zaun 'Oh my Posh').\n"
-RUN apt install -y ca-certificates curl git wget unzip
+RUN apt install -y ca-certificates curl git p7zip p7zip-full wget unzip
 
 # 🇬🇧 Ah, pandoc and xclip are missed!
 # 🇵🇹 Ah, faltam os pacotes pandoc e xclip!
@@ -98,7 +98,11 @@ RUN apt install -y python3 python3-pip
 # 🇵🇹 Outras ferramentas que não fazem parte dos repositórios oficiais do Arch
 RUN source ./colours.sh && echo -en "$(piltover_2 'A copiar e instalar o') $(shurima chameleon) $(piltover_2 e o) $(shurima gitstatus).\n"
 RUN pip3 install moving-chameleon
-COPY ./config/ubuntu/source/gitstatus /usr/share/
+RUN mkdir -p /usr/share/gitstatus
+COPY ./config/ubuntu/source/gitstatus.7z /usr/share/gitstatus/
+RUN cd /usr/share/gitstatus && 7z x -t7z gitstatus.7z
+RUN ls /usr/share/gitstatus
+RUN rm /usr/share/gitstatus/gitstatus.7z
 
 # 🇬🇧 Some tools for zsh need to be Neofetch!
 # 🇵🇹 Faltam algumas ferramentas para Neofetch!
@@ -111,7 +115,10 @@ RUN apt install -y kitty kitty-terminfo xauth
 
 RUN source ./colours.sh && echo -en "$(piltover_2 'A instalar as ferramentas de Sixel').\n"
 RUN apt install -y libsixel-bin
-COPY ./config/ubuntu/source/lsix/lsix /usr/bin/
+COPY ./config/ubuntu/source/lsix.7z /usr/bin/
+RUN cd /usr/bin/ && 7z x -t7z lsix.7z
+RUN chmod au+x /usr/bin/lsix
+RUN rm /usr/bin/lsix.7z
 
 # 🇬🇧 Installing LSDeluxe
 # 🇵🇹 A instalar o LSDeluxe
