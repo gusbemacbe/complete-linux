@@ -1,11 +1,9 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 export ZSH="$HOME/.oh-my-zsh"
 export TERM="xterm-256color"
-
-POWERLEVEL9K_DISABLE_GITSTATUS=false
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(brackets cursor main pattern)
@@ -66,3 +64,10 @@ if [[ -d $HOME/.yarn/bin ]]
 then
     export PATH="$HOME/.yarn/bin:$PATH"
 fi
+
+if [[ -f wsl.exe ]]
+then
+    wsl.exe -d wsl-vpnkit service wsl-vpnkit start
+fi
+
+POWERLEVEL9K_DISABLE_GITSTATUS=true
