@@ -5,7 +5,7 @@ FROM archlinux/archlinux AS base-devel
 LABEL description "Minimal version of Arch Linux image comes with Git, Micro, Neofetch, Oh My Zsh, Powerlevel10k, SSH and ZSH"
 LABEL maintainer="Gustavo Costa <gusbemacbe@gmail.com>" 
 LABEL vendor="Gustavo Costa" 
-LABEL version="1.5.5"
+LABEL version="1.6.0"
 
 # 🇬🇧 SYSTEM
 # 🇵🇹 SISTEMA
